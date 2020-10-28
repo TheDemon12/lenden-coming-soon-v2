@@ -4,7 +4,6 @@
 	font-family: 'Cera Pro', Roboto, Droid Sans;
 	font-weight: 500;
 	font-size: 18px;
-	height: 70px;
 
 	.navbar-toggler {
 		&,
@@ -16,13 +15,14 @@
 
 	.navbar-nav {
 		align-items: center;
+		padding: 1rem 0;
 		.nav-link {
 			&.active {
 				color: #bef1ff;
 			}
 
 			color: #bef1ff;
-			padding: 0 2rem;
+			padding: 0.5rem 2rem;
 		}
 
 		.btn {
@@ -303,7 +303,10 @@
 				color: #949494;
 				margin-bottom: 0.25rem;
 				font-size: 20px;
+				font-weight: 500;
 			}
+
+			font-weight: 400;
 			display: flex;
 			flex-direction: column;
 			margin: 1rem;

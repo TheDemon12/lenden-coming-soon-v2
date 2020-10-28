@@ -115,6 +115,7 @@ function App() {
 						<div>Career</div>
 					</div>
 					<div className='links'>
+						<div>Useful Links</div>
 						<div>Pricing for teams</div>
 						<div>Gift Cards</div>
 						<div>Contact & Help</div>
