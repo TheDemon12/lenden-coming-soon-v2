@@ -1,0 +1,62 @@
+.faq {
+	padding: 3rem 0;
+	color: #fff;
+	font-family: 'Cera Pro', Roboto, Droid Sans;
+	text-align: center;
+	.heading {
+		margin: 0 auto;
+		width: fit-content;
+		h2 {
+			font-weight: normal;
+			position: relative;
+			display: inline-block;
+			margin: 0 auto;
+			padding-bottom: 0.5rem;
+			font-size: 54px;
+
+			&:after {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 33%;
+				height: 0;
+				width: 33%;
+				border-bottom: 2px solid #ffbc36;
+			}
+		}
+	}
+
+	.accordion {
+		margin: 2rem auto;
+		max-width: 90%;
+
+		.card {
+			background: #47505d;
+			box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.02),
+				0px 4px 5px rgba(0, 0, 0, 0.05);
+			border-radius: 10px;
+			margin: 0.5rem 0;
+			border: none;
+
+			.card-header {
+				background: #47505d;
+				border: none;
+				font-size: 20px;
+				div {
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+
+					svg {
+						width: 1rem;
+					}
+				}
+			}
+			.card-body {
+				text-align: left;
+				padding-top: 0;
+				font-size: 16px;
+			}
+		}
+	}
+}

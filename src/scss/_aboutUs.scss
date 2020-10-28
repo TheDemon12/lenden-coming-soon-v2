@@ -1,0 +1,92 @@
+.about-us {
+	padding: 2rem 0;
+	color: #fff;
+	font-family: 'Cera Pro', Roboto, Droid Sans;
+	text-align: center;
+
+	.heading {
+		margin: 0 auto;
+		width: fit-content;
+		h2 {
+			font-weight: normal;
+			position: relative;
+			display: inline-block;
+			margin: 0 auto;
+			padding-bottom: 0.5rem;
+			font-size: 54px;
+
+			&:after {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 33%;
+				height: 0;
+				width: 33%;
+				border-bottom: 2px solid #ffbc36;
+			}
+		}
+	}
+	.motto {
+		margin: 0 auto;
+		width: fit-content;
+		max-width: 80%;
+		p {
+			position: relative;
+			&::before {
+				content: url('../icons/quote.svg');
+				position: absolute;
+				top: -30px;
+				left: -40px;
+				width: 100px;
+				height: 100px;
+			}
+			margin: 4rem;
+			font-size: 45px;
+			font-weight: 500;
+		}
+	}
+
+	.message {
+		z-index: 2;
+		display: flex;
+		max-width: 75%;
+		margin: 6rem auto;
+		border: 10px solid #ffbc36;
+		align-items: center;
+
+		.text {
+			font-weight: 500;
+			font-size: 30px;
+			text-align: left;
+			margin-right: 4rem;
+			margin-left: 2rem;
+
+			.btn {
+				display: block;
+				margin: 2rem 0;
+				font-family: 'Cera Pro', Roboto, Droid Sans;
+				font-size: 1.2rem;
+				font-weight: 500;
+				border-radius: 25px;
+
+				&,
+				&:focus,
+				&:active {
+					background-color: #ffbc36;
+					border: none;
+					outline: none;
+					box-shadow: none;
+				}
+
+				color: #1a2639;
+			}
+		}
+
+		.image {
+			z-index: -1;
+			img {
+				transform: scale(1.2);
+			}
+		}
+	}
+}

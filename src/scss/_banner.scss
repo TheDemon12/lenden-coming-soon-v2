@@ -1,0 +1,33 @@
+.banner {
+	color: white;
+	height: 600px;
+	background-color: #47505d;
+	position: relative;
+	display: flex;
+	align-items: center;
+
+	// justify-content: space-between;
+	// flex-wrap: wrap;
+
+	.title {
+		color: #bfe1ff;
+		line-height: 70px;
+		z-index: 2;
+		max-width: 650px;
+		margin-left: 4rem;
+		font-family: Agency FB;
+		font-size: 60px;
+		font-weight: 600;
+		margin-top: -4rem;
+		// align-self: center;
+	}
+	svg {
+		z-index: 1;
+		position: absolute;
+		bottom: 2rem;
+		right: 2rem;
+		width: 700px;
+		// align-self: flex-end;
+		// margin: 2rem;
+	}
+}
