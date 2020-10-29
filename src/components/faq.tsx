@@ -6,7 +6,7 @@ import { ReactComponent as Minus } from '../icons/minus.svg';
 export interface FaqProps {}
 
 const Faq: React.FC<FaqProps> = () => {
-	const [activeKey, setActiveKey] = React.useState('0');
+	const [activeKey, setActiveKey] = React.useState('');
 
 	const faqs = [
 		{ ques: 'Why to register your product?', ans: '' },
