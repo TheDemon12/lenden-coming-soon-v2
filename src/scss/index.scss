@@ -2,6 +2,10 @@
 @import './navbar', './fonts', './aboutUs', './banner', './faq', './register',
 	'./footer', './subscribe';
 
+html {
+	font-size: 62.5%;
+}
+
 body {
 	margin: 0;
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

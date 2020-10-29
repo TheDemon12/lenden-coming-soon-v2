@@ -1,22 +1,24 @@
 .register {
 	background-color: #47505d;
 	font-family: 'Cera Pro', Roboto, Droid Sans;
+	padding: 3rem 0;
 
 	h2 {
 		max-width: 90%;
 		font-weight: 600;
-		font-size: 50px;
+		font-size: 5rem;
 		text-align: center;
 		color: #fff;
-		padding: 4rem 0 2rem 0;
-		margin: 0 auto;
+		// padding: 4rem 0 2rem 0;
+		margin: 3rem auto;
+		// margin: 0 auto;
 	}
 
 	.btn {
 		display: block;
 		margin: 2rem auto 3rem auto;
-		font-size: 16px;
-		border-radius: 25px;
+		font-size: 1.6rem;
+		border-radius: 2.5rem;
 		font-family: 'Cera Pro', Roboto, Droid Sans;
 		box-shadow: 0px 4px 33px rgba(0, 0, 0, 0.22);
 		padding: 0.8rem 1.5rem;
@@ -31,11 +33,12 @@
 	}
 
 	.info {
-		padding-bottom: 2rem;
+		// padding-bottom: 2rem;
 		display: flex;
 		justify-content: space-around;
 		flex-wrap: wrap;
 		color: #fff;
+		font-size: 1.6rem;
 
 		svg {
 			margin: 1rem;
