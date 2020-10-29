@@ -12,14 +12,23 @@ const Footer: React.FC<FooterProps> = () => {
 			<div className='info'>
 				<div className='logo'>LOGO</div>
 				<div className='links'>
-					<div>Company</div>
-					<div>Career</div>
+					<div>Menu</div>
+					<div>About Us</div>
+					<div>Blog</div>
+					<div>FAQ's</div>
 				</div>
 				<div className='links'>
-					<div>Useful Links</div>
-					<div>Pricing for teams</div>
-					<div>Gift Cards</div>
-					<div>Contact & Help</div>
+					<div>Terms & Conditions</div>
+					<div>Terms of Service</div>
+					<div>Privacy Policy</div>
+					<div>Cookie Policy</div>
+					<div>Refund Policy</div>
+				</div>
+				<div className='links'>
+					<div>Contact Us</div>
+					<div>Contact Details</div>
+					<div>Address</div>
+					<div>Official Email Address</div>
 				</div>
 				<div className='social'>
 					<div className='row'>
@@ -33,14 +42,14 @@ const Footer: React.FC<FooterProps> = () => {
 				</div>
 			</div>
 
-			<div className='navigation'>
+			{/* <div className='navigation'>
 				<div>© Lenden 2020</div>
 				<div>Sitemap</div>
 				<div>Disclaimer</div>
 				<div>User Privacy</div>
 				<div>Terms</div>
 				<div>Applicant Privacy</div>
-			</div>
+			</div> */}
 		</section>
 	);
 };
