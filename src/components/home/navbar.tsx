@@ -2,10 +2,11 @@ import * as React from 'react';
 
 import { Button, Nav, Navbar } from 'react-bootstrap';
 import { scroller } from 'react-scroll';
+import { RouteComponentProps } from 'react-router-dom';
 
-export interface MainNavbarProps {}
+export interface MainNavbarProps extends RouteComponentProps {}
 
-const MainNavbar: React.FC<MainNavbarProps> = () => {
+const MainNavbar: React.FC<MainNavbarProps> = props => {
 	return (
 		<Navbar collapseOnSelect expand='lg' variant='dark'>
 			<Navbar.Brand>Lenden-Logo</Navbar.Brand>
@@ -21,7 +22,9 @@ const MainNavbar: React.FC<MainNavbarProps> = () => {
 					<Nav.Link onClick={() => scroller.scrollTo('footer', {})}>
 						Contact Us
 					</Nav.Link>
-					<Button>Register your Product</Button>
+					<Button onClick={() => props.history.push('/post-product')}>
+						Register your Product
+					</Button>
 				</Nav>
 			</Navbar.Collapse>
 		</Navbar>

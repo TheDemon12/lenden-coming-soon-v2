@@ -19,7 +19,7 @@
 		// padding: 0 2rem;
 
 		&::before {
-			content: url('../icons/quote.svg');
+			content: url('../../icons/quote.svg');
 			position: absolute;
 			top: -3rem;
 			// left: -3rem;
@@ -48,14 +48,11 @@
 			}
 		}
 
-		.image {
+		img {
 			order: 1;
 			z-index: -1;
-			// width: 80rem;
-			img {
-				transform: scale(1.2);
-				width: 55rem;
-			}
+			transform: scale(1.2);
+			width: 55rem;
 		}
 
 		@media (max-width: 1200px) {
@@ -63,10 +60,9 @@
 				font-size: 2.6rem;
 				padding: 0 6rem 0 3rem;
 			}
-			.image {
-				img {
-					width: 45rem;
-				}
+
+			img {
+				width: 45rem;
 			}
 		}
 
@@ -74,10 +70,9 @@
 			.text {
 				font-size: 2.2rem;
 			}
-			.image {
-				img {
-					width: 35rem;
-				}
+
+			img {
+				width: 35rem;
 			}
 		}
 		@media (max-width: 860px) {
@@ -91,15 +86,13 @@
 				padding: 0;
 				padding-top: 2rem;
 			}
-			.image {
+
+			img {
 				order: 0;
 				z-index: 0;
 				width: 100%;
-				img {
-					width: 100%;
-					object-fit: cover;
-					transform: none;
-				}
+				object-fit: cover;
+				transform: none;
 			}
 		}
 

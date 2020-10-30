@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { scroller } from 'react-scroll';
 
-import { ReactComponent as Facebook } from '../icons/facebook.svg';
-import { ReactComponent as Instagram } from '../icons/instagram.svg';
-import { ReactComponent as Linkedin } from '../icons/linkedin.svg';
-import { ReactComponent as Twitter } from '../icons/twitter.svg';
+import { ReactComponent as Facebook } from '../../icons/facebook.svg';
+import { ReactComponent as Instagram } from '../../icons/instagram.svg';
+import { ReactComponent as Linkedin } from '../../icons/linkedin.svg';
+import { ReactComponent as Twitter } from '../../icons/twitter.svg';
 
 export interface FooterProps {}
 const Footer: React.FC<FooterProps> = () => {

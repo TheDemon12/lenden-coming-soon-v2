@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Accordion, Card } from 'react-bootstrap';
-import { ReactComponent as Plus } from '../icons/plus.svg';
-import { ReactComponent as Minus } from '../icons/minus.svg';
+import { ReactComponent as Plus } from '../../icons/plus.svg';
+import { ReactComponent as Minus } from '../../icons/minus.svg';
 
 export interface FaqProps {}
 

@@ -1,0 +1,8 @@
+@import './navbar', './aboutUs', './banner', './faq', './register', './footer',
+	'./subscribe';
+
+.home {
+	position: relative;
+	background: #1a2639;
+	z-index: 0;
+}

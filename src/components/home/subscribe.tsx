@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Joi from 'joi';
 import { FormControl, InputGroup } from 'react-bootstrap';
-import http from '../services/httpService';
+import http from '../../services/httpService';
 import { ClipLoader } from 'react-spinners';
 
 export interface SubscribeProps {}
