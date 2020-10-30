@@ -1,22 +1,18 @@
 .subscribe {
+	@include spacing(8rem);
+
 	background-color: #47505d;
 	font-family: 'Cera Pro', Roboto, Droid Sans;
-	padding: 3rem 0;
 
 	h2 {
 		@extend %heading2;
 	}
 	p {
-		text-align: center;
-		margin: 0 auto;
-		// max-width: 90%;
-		font-weight: 500;
-		font-size: 34px;
-		color: #ffbc36;
+		@extend %subHeading;
+		margin: 3rem 0;
 	}
 	.emailBox {
 		border-radius: 25px;
-		width: 90%;
 		margin: 2rem auto;
 		max-width: 50rem;
 
