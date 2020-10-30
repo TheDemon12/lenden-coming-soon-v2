@@ -23,7 +23,9 @@
 		padding: 1rem 0;
 
 		.nav-link {
-			&.active {
+			&:active,
+			&:hover,
+			&:focus {
 				color: #bef1ff;
 			}
 
@@ -32,20 +34,7 @@
 		}
 
 		.btn {
-			&,
-			&:focus,
-			&:active {
-				background-color: #ffbc36;
-				border: none;
-				outline: none;
-				box-shadow: none;
-			}
-			font-family: 'Cera Pro', Roboto, Droid Sans;
-			font-weight: 500;
-			color: #1a2639;
-			border-radius: 2.5rem;
-			font-size: 1.6rem;
-			padding: 0.8rem 1.5rem;
+			@extend %button;
 		}
 	}
 }

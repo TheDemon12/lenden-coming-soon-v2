@@ -1,32 +1,16 @@
 .faq {
-	padding: 3rem 0;
+	@include spacing(8rem);
+
 	color: #fff;
 	font-family: 'Cera Pro', Roboto, Droid Sans;
 	text-align: center;
-	.heading {
-		margin: 3rem auto;
-		width: fit-content;
-		h2 {
-			font-weight: normal;
-			position: relative;
-			display: inline-block;
-			padding-bottom: 0.5rem;
-			font-size: 5.4rem;
 
-			&:after {
-				content: '';
-				position: absolute;
-				bottom: 0;
-				left: 33%;
-				height: 0;
-				width: 33%;
-				border-bottom: 2px solid #ffbc36;
-			}
-		}
+	h2 {
+		@extend %heading;
 	}
 
 	.accordion {
-		margin: 2rem auto;
+		margin: 4rem auto 0 auto;
 		// max-width: 90%;
 
 		.card {
@@ -60,6 +44,44 @@
 				text-align: left;
 				padding: 0 2rem 0.9rem 2rem;
 				font-size: 1.6rem;
+			}
+
+			// @media (max-width: 1200px) {
+			// 	font-size: 3rem;
+			// }
+			// @media (max-width: 990px) {
+			// 	font-size: 2.8rem;
+			// }
+
+			@media (max-width: 700px) {
+				.card-header {
+					div {
+						font-size: 1.8rem;
+					}
+				}
+				.card-body {
+					font-size: 1.5rem;
+				}
+			}
+			@media (max-width: 450px) {
+				.card-header {
+					div {
+						font-size: 1.6rem;
+					}
+				}
+				.card-body {
+					font-size: 1.4rem;
+				}
+			}
+			@media (max-width: 400px) {
+				.card-header {
+					div {
+						font-size: 1.5rem;
+					}
+				}
+				.card-body {
+					font-size: 1.4rem;
+				}
 			}
 		}
 	}

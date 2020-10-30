@@ -5,7 +5,7 @@ export interface AboutUsProps {}
 
 const AboutUs: React.FC<AboutUsProps> = () => {
 	return (
-		<section className='about-us'>
+		<section className='aboutUs'>
 			<h2>About us</h2>
 
 			<p>

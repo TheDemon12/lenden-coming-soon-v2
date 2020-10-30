@@ -1,4 +1,4 @@
-.about-us {
+.aboutUs {
 	@include spacing(8rem);
 
 	color: #fff;
@@ -10,17 +10,19 @@
 	}
 
 	p {
-		@extend %heading2;
-
+		@extend %subHeading;
+		color: #fff;
+		text-align: center;
 		position: relative;
 		margin: 6rem auto;
 		font-weight: 500;
+		// padding: 0 2rem;
 
 		&::before {
 			content: url('../icons/quote.svg');
 			position: absolute;
 			top: -3rem;
-			left: 0rem;
+			// left: -3rem;
 			width: 10rem;
 			height: 10rem;
 		}

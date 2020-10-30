@@ -66,9 +66,8 @@ const Faq: React.FC<FaqProps> = () => {
 	];
 	return (
 		<section className='faq'>
-			<div className='heading'>
-				<h2>FAQ</h2>
-			</div>
+			<h2>FAQ</h2>
+
 			<Accordion
 				activeKey={activeKey}
 				onSelect={key => {

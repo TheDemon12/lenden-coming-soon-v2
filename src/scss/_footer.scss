@@ -4,9 +4,16 @@
 	color: white;
 	// margin: 2rem 0;
 	background: #2f3a4b;
-	padding: 1.5rem 0;
+	@include spacing(4rem);
 
 	.info {
+		@media (max-width: 1000px) {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+		}
+
 		display: flex;
 		align-items: flex-start;
 		justify-content: space-around;
@@ -26,6 +33,7 @@
 				margin-bottom: 0.25rem;
 				font-size: 2rem;
 				font-weight: 500;
+				cursor: auto;
 			}
 			line-height: 3rem;
 			font-weight: 400;
@@ -33,6 +41,7 @@
 			flex-direction: column;
 			margin: 1rem;
 			font-size: 1.8rem;
+			cursor: pointer;
 		}
 		.social {
 			display: flex;
@@ -42,6 +51,7 @@
 				display: flex;
 				justify-content: center;
 				svg {
+					cursor: pointer;
 					margin: 1rem;
 				}
 			}
