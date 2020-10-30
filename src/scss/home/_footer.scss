@@ -23,8 +23,11 @@
 		align-items: flex-start;
 
 		.logo {
-			margin: 2rem;
-			font-size: 2rem;
+			margin: 2rem 0;
+
+			svg {
+				width: 12rem;
+			}
 		}
 
 		.links {

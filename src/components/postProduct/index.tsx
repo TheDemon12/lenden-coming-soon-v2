@@ -9,8 +9,8 @@ export interface PostProductProps {}
 const PostProduct: React.FC<PostProductProps> = () => {
 	return (
 		<div className='container chooseCategory'>
-			<h1>Choose a Category</h1>
 			<div className='categoryContainer'>
+				<h1>Choose a Category</h1>
 				<div className='row'>
 					<div
 						className='col col-l'

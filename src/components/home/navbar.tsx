@@ -4,12 +4,16 @@ import { Button, Nav, Navbar } from 'react-bootstrap';
 import { scroller } from 'react-scroll';
 import { RouteComponentProps } from 'react-router-dom';
 
+import { ReactComponent as Logo } from '../../icons/logo.svg';
+
 export interface MainNavbarProps extends RouteComponentProps {}
 
 const MainNavbar: React.FC<MainNavbarProps> = props => {
 	return (
 		<Navbar collapseOnSelect expand='lg' variant='dark'>
-			<Navbar.Brand>Lenden-Logo</Navbar.Brand>
+			<Navbar.Brand>
+				<Logo />
+			</Navbar.Brand>
 			<Navbar.Toggle />
 			<Navbar.Collapse>
 				<Nav className='ml-auto'>

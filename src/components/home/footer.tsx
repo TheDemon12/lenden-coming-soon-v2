@@ -5,13 +5,16 @@ import { ReactComponent as Facebook } from '../../icons/facebook.svg';
 import { ReactComponent as Instagram } from '../../icons/instagram.svg';
 import { ReactComponent as Linkedin } from '../../icons/linkedin.svg';
 import { ReactComponent as Twitter } from '../../icons/twitter.svg';
+import { ReactComponent as Logo } from '../../icons/logo.svg';
 
 export interface FooterProps {}
 const Footer: React.FC<FooterProps> = () => {
 	return (
 		<section className='footer'>
 			<div className='info'>
-				<div className='logo'>LOGO</div>
+				<div className='logo'>
+					<Logo />
+				</div>
 				<div className='links'>
 					<div>Menu</div>
 					<div onClick={() => scroller.scrollTo('aboutUs', {})}>About Us</div>
