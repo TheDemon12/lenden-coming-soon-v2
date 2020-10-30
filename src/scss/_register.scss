@@ -39,9 +39,14 @@
 		flex-wrap: wrap;
 		color: #fff;
 		font-size: 1.6rem;
+		text-align: left;
 
+		div {
+			margin: 1.5rem 0;
+			min-width: 30rem;
+		}
 		svg {
-			margin: 1rem;
+			margin: 0 1rem;
 		}
 	}
 }

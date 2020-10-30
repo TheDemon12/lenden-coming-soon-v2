@@ -5,17 +5,23 @@
 	font-weight: 500;
 	font-size: 2rem;
 
+	.navbar-brand {
+		font-size: 2rem;
+	}
+
 	.navbar-toggler {
 		&,
 		&:focus {
 			border: none;
 			outline: none;
 		}
+		font-size: 2rem;
 	}
 
 	.navbar-nav {
 		align-items: center;
 		padding: 1rem 0;
+
 		.nav-link {
 			&.active {
 				color: #bef1ff;

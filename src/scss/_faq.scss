@@ -43,12 +43,13 @@
 				border: none;
 				// font-size: 20px;
 				padding: 0;
+				text-align: left;
 				div {
 					padding: 0.9rem 2rem;
 					display: flex;
 					align-items: center;
 					justify-content: space-between;
-					font-size: 1.8rem;
+					font-size: 2rem;
 
 					svg {
 						width: 1.6rem;
@@ -57,7 +58,7 @@
 			}
 			.card-body {
 				text-align: left;
-				padding-top: 0;
+				padding: 0 2rem 0.9rem 2rem;
 				font-size: 1.6rem;
 			}
 		}

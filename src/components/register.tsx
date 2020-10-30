@@ -12,15 +12,15 @@ const Register: React.FC<RegisterProps> = () => {
 			<div className='info'>
 				<div>
 					<Tick />
-					Lorem ipsum dolor sit amet.
+					Get a fair value for your product
 				</div>
 				<div>
 					<Tick />
-					Lorem ipsum dolor sit amet.
+					Adopt a sustainable lifestyle
 				</div>
 				<div>
 					<Tick />
-					Lorem ipsum dolor sit amet.
+					Become less cash dependent
 				</div>
 			</div>
 		</section>
