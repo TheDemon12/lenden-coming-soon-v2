@@ -1,16 +1,20 @@
 .banner {
+	@include spacing(12rem);
+
 	color: white;
-	height: 60rem;
 	position: relative;
 	display: flex;
 	align-items: center;
+
+	@media (max-width: 700px) {
+		padding: 8rem 5rem;
+	}
 
 	.title {
 		color: #bfe1ff;
 		line-height: 7rem;
 		z-index: 2;
 		max-width: 65rem;
-		margin-left: 4rem;
 		font-family: 'Cera Pro', Roboto, Droid Sans;
 		font-size: 5rem;
 		font-weight: 600;
@@ -24,13 +28,11 @@
 			font-size: 3.5rem;
 			line-height: 5rem;
 			max-width: 35rem;
-			margin-left: 2rem;
 		}
 
 		@media (max-width: 700px) {
 			max-width: 100%;
 			font-size: 4rem;
-			margin: 0 2rem;
 		}
 	}
 
@@ -75,26 +77,6 @@
 	}
 
 	.btn {
-		display: block;
-		margin: 2rem 0;
-		font-family: 'Cera Pro', Roboto, Droid Sans;
-		font-size: 1.8rem;
-		font-weight: 500;
-		border-radius: 2.5rem;
-		padding: 0.5rem 2rem;
-		color: #1a2639;
-
-		&,
-		&:focus,
-		&:active {
-			background-color: #ffbc36;
-			border: none;
-			outline: none;
-			box-shadow: none;
-		}
-
-		@media (max-width: 400px) {
-			font-size: 1.6rem;
-		}
+		@extend %button;
 	}
 }

@@ -4,18 +4,12 @@
 	padding: 3rem 0;
 
 	h2 {
-		max-width: 90%;
-		font-weight: 600;
-		font-size: 5rem;
-		text-align: center;
-		color: #fff;
-		// padding: 0 0 2rem 0;
-		margin: 3rem auto;
+		@extend %heading2;
 	}
 	p {
 		text-align: center;
 		margin: 0 auto;
-		max-width: 90%;
+		// max-width: 90%;
 		font-weight: 500;
 		font-size: 34px;
 		color: #ffbc36;

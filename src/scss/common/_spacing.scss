@@ -1,0 +1,7 @@
+@mixin spacing($top-bottom-spacing) {
+	padding: $top-bottom-spacing 5rem;
+
+	@media (max-width: 700px) {
+		padding: $top-bottom-spacing 3rem;
+	}
+}

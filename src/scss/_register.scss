@@ -1,52 +1,23 @@
 .register {
+	@include spacing(8rem);
+
 	background-color: #47505d;
 	font-family: 'Cera Pro', Roboto, Droid Sans;
-	padding: 3rem 0;
 
 	h2 {
-		max-width: 90%;
-		font-weight: 600;
-		font-size: 5rem;
-		text-align: center;
-		color: #fff;
-		margin: 3rem auto;
-		@media (max-width: 1200px) {
-			font-size: 4.5rem;
-		}
-		@media (max-width: 990px) {
-			font-size: 4rem;
-		}
-
-		@media (max-width: 700px) {
-			font-size: 3.5rem;
-		}
-		@media (max-width: 400px) {
-			font-size: 3rem;
-		}
+		@extend %heading2;
 	}
 
 	.btn {
-		display: block;
-		margin: 3rem auto;
-		font-size: 1.6rem;
-		border-radius: 2.5rem;
-		font-family: 'Cera Pro', Roboto, Droid Sans;
+		@extend %button;
 		box-shadow: 0px 4px 33px rgba(0, 0, 0, 0.22);
-		padding: 0.8rem 2rem;
+		color: white !important;
+		margin: 3rem auto;
 
 		&,
 		&:focus,
 		&:active {
-			background-color: #1a2639;
-			border: none;
-			outline: none;
-		}
-
-		@media (max-width: 700px) {
-			font-size: 1.5rem;
-		}
-		@media (max-width: 400px) {
-			font-size: 1.4rem;
+			background-color: #1a2639 !important;
 		}
 	}
 
@@ -57,6 +28,7 @@
 		color: #fff;
 		font-size: 1.8rem;
 		text-align: left;
+		margin-top: 1.5rem;
 
 		div {
 			display: flex;

@@ -1,4 +1,6 @@
 @import '~bootstrap/scss/bootstrap';
+@import './common/';
+
 @import './navbar', './fonts', './aboutUs', './banner', './faq', './register',
 	'./footer', './subscribe';
 

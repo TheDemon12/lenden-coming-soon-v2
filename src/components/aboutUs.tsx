@@ -6,16 +6,12 @@ export interface AboutUsProps {}
 const AboutUs: React.FC<AboutUsProps> = () => {
 	return (
 		<section className='about-us'>
-			<div className='heading'>
-				<h2>About us</h2>
-			</div>
+			<h2>About us</h2>
 
-			<div className='motto'>
-				<p>
-					Barter isn’t simply exchange, it is a way of living. We are here to
-					introduce you to it.
-				</p>
-			</div>
+			<p>
+				Barter isn’t simply exchange, it is a way of living. We are here to
+				introduce you to it.
+			</p>
 
 			<div className='message'>
 				<div className='text'>

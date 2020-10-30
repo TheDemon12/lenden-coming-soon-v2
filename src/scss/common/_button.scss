@@ -1,0 +1,23 @@
+%button {
+	font-family: 'Cera Pro', Roboto, Droid Sans;
+	display: block;
+	margin: 2rem 0;
+	font-size: 1.8rem;
+	font-weight: 500;
+	border-radius: 2.5rem;
+	padding: 0.8rem 2rem;
+	color: #1a2639 !important;
+
+	&,
+	&:focus,
+	&:active {
+		background-color: #ffbc36 !important;
+		border: none !important;
+		outline: none !important;
+		box-shadow: none;
+	}
+
+	@media (max-width: 400px) {
+		font-size: 1.6rem;
+	}
+}
