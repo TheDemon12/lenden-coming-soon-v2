@@ -82,6 +82,7 @@
 		font-weight: 500;
 		border-radius: 2.5rem;
 		padding: 0.5rem 2rem;
+		color: #1a2639;
 
 		&,
 		&:focus,
@@ -92,6 +93,8 @@
 			box-shadow: none;
 		}
 
-		color: #1a2639;
+		@media (max-width: 400px) {
+			font-size: 1.6rem;
+		}
 	}
 }
