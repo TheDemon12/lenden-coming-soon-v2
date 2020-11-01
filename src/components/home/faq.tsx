@@ -72,6 +72,7 @@ const Faq: React.FC<FaqProps> = () => {
 				activeKey={activeKey}
 				onSelect={key => {
 					if (key) setActiveKey(key!.toString());
+					else setActiveKey('');
 				}}>
 				{faqs.map((faq, i) => (
 					<Card key={i}>

@@ -8,7 +8,9 @@ export interface RegisterProps extends RouteComponentProps {}
 const Register: React.FC<RegisterProps> = props => {
 	return (
 		<section className='register'>
-			<h2>Yes, it is that simple! Want to try it out ?</h2>
+			<h2>
+				<span>Yes, it is that simple!</span> Want to try it out ?
+			</h2>
 			<Button onClick={() => props.history.push('/post-product')}>
 				Register your Product
 			</Button>

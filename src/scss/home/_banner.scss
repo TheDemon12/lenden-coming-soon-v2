@@ -22,6 +22,11 @@
 		font-size: 5rem;
 		font-weight: 600;
 
+		span {
+			display: block;
+			color: #fff;
+		}
+
 		@media (max-width: 1200px) {
 			font-size: 4rem;
 			line-height: 6rem;

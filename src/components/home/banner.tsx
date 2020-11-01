@@ -10,8 +10,8 @@ const Banner: React.FC<BannerProps> = props => {
 	return (
 		<section className='banner'>
 			<div className='title'>
-				Your wants are precious to us. Tell us what you want and we’ll help you
-				find it through barter.
+				<span>Your wants are precious to us.</span>
+				Tell us what you want and we will help you find it through barter.
 				<Button onClick={() => props.history.push('/post-product')}>
 					Register your Product
 				</Button>

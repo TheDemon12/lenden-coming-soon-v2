@@ -37,8 +37,7 @@ const Footer: React.FC<FooterProps> = () => {
 					</div>
 				</div>
 				<div className='social'>
-					<div className='row'>
-						<Twitter />
+					{/* <div className='row'>
 						<Linkedin
 							onClick={() =>
 								window.open(
@@ -46,7 +45,7 @@ const Footer: React.FC<FooterProps> = () => {
 								)
 							}
 						/>
-					</div>
+					</div> */}
 					<div className='row'>
 						<Instagram
 							onClick={() =>
@@ -56,6 +55,13 @@ const Footer: React.FC<FooterProps> = () => {
 						<Facebook
 							onClick={() =>
 								window.open('https://www.facebook.com/lendenindia')
+							}
+						/>
+						<Linkedin
+							onClick={() =>
+								window.open(
+									'https://www.linkedin.com/company/lendenindia/?viewAsMember=true'
+								)
 							}
 						/>
 					</div>

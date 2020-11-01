@@ -6,6 +6,10 @@
 
 	h2 {
 		@extend %heading2;
+
+		span {
+			color: #ffbc36;
+		}
 	}
 
 	.btn {
