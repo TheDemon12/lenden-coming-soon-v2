@@ -1,10 +1,11 @@
 import * as React from 'react';
 import { Button } from 'react-bootstrap';
-import { RouteComponentProps } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
-export interface AboutUsProps extends RouteComponentProps {}
+export interface AboutUsProps {}
 
-const AboutUs: React.FC<AboutUsProps> = props => {
+const AboutUs: React.FC<AboutUsProps> = () => {
+	const history = useHistory();
 	return (
 		<section className='aboutUs'>
 			<h2>About us</h2>
@@ -19,7 +20,7 @@ const AboutUs: React.FC<AboutUsProps> = props => {
 					Len Den wants to help you live a sustainable lifestyle by re-adopting
 					barter. We have created a platform where you can get what you want by
 					giving what you do not want anymore without paying any price.
-					<Button onClick={() => props.history.push('/post-product')}>
+					<Button onClick={() => history.push('/post-product')}>
 						Register your Product
 					</Button>
 				</div>

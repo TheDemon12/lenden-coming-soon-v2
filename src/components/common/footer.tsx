@@ -4,26 +4,41 @@ import { scroller } from 'react-scroll';
 import { ReactComponent as Facebook } from '../../icons/facebook.svg';
 import { ReactComponent as Instagram } from '../../icons/instagram.svg';
 import { ReactComponent as Linkedin } from '../../icons/linkedin.svg';
-import { ReactComponent as Twitter } from '../../icons/twitter.svg';
+// import { ReactComponent as Twitter } from '../../icons/twitter.svg';
 import { ReactComponent as Logo } from '../../icons/logo.svg';
 import { Modal, Button } from 'react-bootstrap';
+import { useHistory, useLocation } from 'react-router-dom';
 
 export interface FooterProps {}
 const Footer: React.FC<FooterProps> = () => {
 	const [tnc, setTnc] = React.useState(false);
 	const [privacyPolicy, setPrivacyPolicy] = React.useState(false);
+	const history = useHistory();
+	const { pathname } = useLocation();
 
 	return (
 		<section className='footer'>
 			<div className='info'>
-				<div className='logo'>
+				<div className='logo' onClick={() => history.push('/')}>
 					<Logo />
 				</div>
 				<div className='links'>
 					<div>Menu</div>
-					<div onClick={() => scroller.scrollTo('aboutUs', {})}>About Us</div>
-					{/* <div>Blog</div> */}
-					<div onClick={() => scroller.scrollTo('faq', {})}>FAQ's</div>
+					<div
+						onClick={async () => {
+							if (pathname !== '/') await history.push('/');
+							scroller.scrollTo('aboutUs', {});
+						}}>
+						About Us
+					</div>
+					<div onClick={() => history.push('/blog')}>Blog</div>
+					<div
+						onClick={async () => {
+							if (pathname !== '/') await history.push('/');
+							scroller.scrollTo('faq', {});
+						}}>
+						FAQ's
+					</div>
 				</div>
 				<div className='links'>
 					<div>Terms & Conditions</div>

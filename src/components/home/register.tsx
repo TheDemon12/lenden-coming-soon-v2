@@ -1,17 +1,19 @@
 import * as React from 'react';
 import { Button } from 'react-bootstrap';
 import { ReactComponent as Tick } from '../../icons/tick.svg';
-import { RouteComponentProps } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
-export interface RegisterProps extends RouteComponentProps {}
+export interface RegisterProps {}
 
-const Register: React.FC<RegisterProps> = props => {
+const Register: React.FC<RegisterProps> = () => {
+	const history = useHistory();
+
 	return (
 		<section className='register'>
 			<h2>
 				<span>Yes, it is that simple!</span> Want to try it out ?
 			</h2>
-			<Button onClick={() => props.history.push('/post-product')}>
+			<Button onClick={() => history.push('/post-product')}>
 				Register your Product
 			</Button>
 			<div className='info'>
