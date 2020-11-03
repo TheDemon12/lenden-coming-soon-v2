@@ -31,7 +31,6 @@ const Faq: React.FC<FaqProps> = () => {
 		Mobile Phones,
 		Gaming Consoles,
 		Gaming CDs,
-		Accessories,
 		Gaming Accessories,
 		Mobile Accessories,
 		PC/Laptop Accessories
@@ -51,7 +50,7 @@ const Faq: React.FC<FaqProps> = () => {
 		{
 			ques: 'How will the product get verified?',
 			ans:
-				'After registering your product, we will verify it by cross checking all the details mentioned and the photo angles attached under Level 1 Verification. Level 2 Verification includes physical examination at the time of delivery.',
+				'After registering your product, we will verify it by cross checking all the details mentioned and the photo angles attached under Level 1 Verification. Level 2 Verification includes physical examination at the time of pickup.',
 		},
 		{
 			ques: 'How will I pay Len Den for its services?',
@@ -61,7 +60,7 @@ const Faq: React.FC<FaqProps> = () => {
 		{
 			ques: 'How will I track the status of my product?',
 			ans:
-				' Through WhatsApp, you will be able to get a hold of the status of your product. For any further queries, WhatsApp will be your go-to.',
+				'Through WhatsApp and email, you will be able to get a hold of the status of your product. For any further queries, WhatsApp will be your go-to.',
 		},
 	];
 	return (
