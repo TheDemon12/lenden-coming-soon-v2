@@ -13,6 +13,17 @@ const MainNavbar: React.FC<MainNavbarProps> = () => {
 	const { pathname } = useLocation();
 	const [isExpanded, setExpanded] = React.useState(false);
 
+	const onNavClick = async (navItem: string) => {
+		if (pathname !== '/') await history.push('/');
+
+		if (isExpanded) {
+			setExpanded(false);
+			scroller.scrollTo(navItem, { offset: -200 });
+		} else {
+			scroller.scrollTo(navItem, {});
+		}
+	};
+
 	return (
 		<Navbar expand='lg' variant='dark' expanded={isExpanded}>
 			<Navbar.Brand
@@ -25,14 +36,7 @@ const MainNavbar: React.FC<MainNavbarProps> = () => {
 			<Navbar.Toggle onClick={() => setExpanded(!isExpanded)} />
 			<Navbar.Collapse>
 				<Nav className='ml-auto'>
-					<Nav.Link
-						onClick={async () => {
-							setExpanded(false);
-							if (pathname !== '/') await history.push('/');
-							scroller.scrollTo('aboutUs', { offset: -200 });
-						}}>
-						About Us
-					</Nav.Link>
+					<Nav.Link onClick={() => onNavClick('aboutUs')}>About Us</Nav.Link>
 					<Nav.Link
 						onClick={() => {
 							setExpanded(false);
@@ -40,21 +44,8 @@ const MainNavbar: React.FC<MainNavbarProps> = () => {
 						}}>
 						Blog
 					</Nav.Link>
-					<Nav.Link
-						onClick={async () => {
-							if (pathname !== '/') await history.push('/');
-							await scroller.scrollTo('faq', { offset: -200 });
-							setExpanded(false);
-						}}>
-						FAQ's
-					</Nav.Link>
-					<Nav.Link
-						onClick={() => {
-							setExpanded(false);
-							scroller.scrollTo('footer', { offset: -200 });
-						}}>
-						Contact Us
-					</Nav.Link>
+					<Nav.Link onClick={() => onNavClick('faq')}>FAQ's</Nav.Link>
+					<Nav.Link onClick={() => onNavClick('footer')}>Contact Us</Nav.Link>
 					<Button
 						onClick={() => {
 							setExpanded(false);
