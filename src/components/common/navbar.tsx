@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import { Button, Nav, Navbar } from 'react-bootstrap';
 import { useHistory, useLocation } from 'react-router-dom';
-import { scroller } from 'react-scroll';
+import { scroller, animateScroll as scroll } from 'react-scroll';
 
 import { ReactComponent as Logo } from '../../icons/logo.svg';
 
@@ -40,6 +40,7 @@ const MainNavbar: React.FC<MainNavbarProps> = () => {
 					<Nav.Link
 						onClick={() => {
 							setExpanded(false);
+							scroll.scrollToTop({ delay: 0, duration: 100 });
 							history.push('/blog');
 						}}>
 						Blog
@@ -49,6 +50,7 @@ const MainNavbar: React.FC<MainNavbarProps> = () => {
 					<Button
 						onClick={() => {
 							setExpanded(false);
+							scroll.scrollToTop({ delay: 0, duration: 100 });
 							history.push('/post-product');
 						}}>
 						Register your Product

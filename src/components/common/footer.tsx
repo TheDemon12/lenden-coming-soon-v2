@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { scroller } from 'react-scroll';
+import { scroller, animateScroll as scroll } from 'react-scroll';
 
 import { ReactComponent as Facebook } from '../../icons/facebook.svg';
 import { ReactComponent as Instagram } from '../../icons/instagram.svg';
@@ -19,7 +19,12 @@ const Footer: React.FC<FooterProps> = () => {
 	return (
 		<section className='footer'>
 			<div className='info'>
-				<div className='logo' onClick={() => history.push('/')}>
+				<div
+					className='logo'
+					onClick={() => {
+						scroll.scrollToTop({ delay: 0, duration: 100 });
+						history.push('/');
+					}}>
 					<Logo />
 				</div>
 				<div className='links'>
@@ -31,7 +36,13 @@ const Footer: React.FC<FooterProps> = () => {
 						}}>
 						About Us
 					</div>
-					<div onClick={() => history.push('/blog')}>Blog</div>
+					<div
+						onClick={() => {
+							scroll.scrollToTop({ delay: 0, duration: 100 });
+							history.push('/blog');
+						}}>
+						Blog
+					</div>
 					<div
 						onClick={async () => {
 							if (pathname !== '/') await history.push('/');
