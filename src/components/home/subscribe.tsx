@@ -49,6 +49,7 @@ class Subscribe extends React.Component<SubscribeProps, SubscribeState> {
 				<p>Care to barter your email address for our newsletters?</p>
 				<InputGroup className='emailBox'>
 					<FormControl
+						type='email'
 						placeholder='Your email'
 						aria-label='Your email'
 						aria-describedby='email'

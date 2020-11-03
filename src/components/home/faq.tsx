@@ -66,7 +66,7 @@ const Faq: React.FC<FaqProps> = () => {
 	];
 	return (
 		<section className='faq'>
-			<h2>FAQ</h2>
+			<h2>Frequently Asked Questions (FAQ's)</h2>
 
 			<Accordion
 				activeKey={activeKey}

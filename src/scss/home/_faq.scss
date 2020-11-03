@@ -6,7 +6,7 @@
 	text-align: center;
 
 	h2 {
-		@extend %heading;
+		@extend %heading2;
 	}
 
 	.accordion {
@@ -36,6 +36,8 @@
 					font-size: 2rem;
 
 					svg {
+						flex-shrink: 0;
+						margin-left: 1rem;
 						width: 1.6rem;
 					}
 				}
