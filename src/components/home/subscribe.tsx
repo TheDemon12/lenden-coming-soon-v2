@@ -31,14 +31,19 @@ class Subscribe extends React.Component<SubscribeProps, SubscribeState> {
 			await http.post('https://api2.lendenindia.in/lenden/addemail', {
 				email: this.state.email,
 			});
-			this.setState({ loading: false, success: "We've received your email!" });
+			this.setState({
+				email: '',
+				loading: false,
+				success: "We've received your email!",
+			});
 		} catch (ex) {
 			this.setState({ loading: false });
 			if (ex.response.status === 400)
 				return this.setState({
+					email: '',
 					error: 'You have already been subscribed!',
 				});
-			this.setState({ error: ex.response.data.message });
+			this.setState({ email: '', error: ex.response.data.message });
 		}
 	};
 
