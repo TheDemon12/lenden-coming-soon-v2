@@ -8,6 +8,7 @@ import Register from './register';
 import SafetyInstructions from './safetyInstructions';
 import Subscribe from './subscribe';
 import Process from './process';
+import LaunchingSoon from './launchingSoon';
 
 export interface HomeProps {}
 
@@ -19,8 +20,9 @@ const Home: React.FC<HomeProps> = () => {
 			<Process />
 			<Register />
 			<AboutUs />
-			<Subscribe />
+			<LaunchingSoon />
 			<Faq />
+			<Subscribe />
 		</div>
 	);
 };

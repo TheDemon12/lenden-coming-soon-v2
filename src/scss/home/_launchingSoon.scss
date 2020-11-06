@@ -1,0 +1,38 @@
+.launchingSoon {
+	@include spacing(8rem);
+	position: relative;
+	font-family: 'Cera Pro', Roboto, Droid Sans;
+	text-align: center;
+	overflow-x: hidden;
+
+	h2 {
+		@extend %heading2;
+		font-weight: 500;
+
+		span {
+			display: block;
+			color: #ffbc36;
+			font-size: 6rem;
+			font-weight: 600;
+			margin: 4rem 0;
+		}
+	}
+
+	svg {
+		max-width: 70rem;
+	}
+
+	.ellipse {
+		position: absolute;
+		display: block;
+		top: 0;
+		left: -10rem;
+		right: -10rem;
+		height: 50rem;
+		background-color: #47505d;
+		border-radius: 50% / 100%;
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+		z-index: -1;
+	}
+}

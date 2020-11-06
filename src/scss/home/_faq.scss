@@ -4,6 +4,7 @@
 	color: #fff;
 	font-family: 'Cera Pro', Roboto, Droid Sans;
 	text-align: center;
+	background-color: #47505d;
 
 	h2 {
 		@extend %heading2;
@@ -14,7 +15,7 @@
 		// max-width: 90%;
 
 		.card {
-			background: #47505d;
+			background: #1a2639;
 			box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.02),
 				0px 4px 5px rgba(0, 0, 0, 0.05);
 			border-radius: 10px;
@@ -23,7 +24,7 @@
 			cursor: pointer;
 
 			.card-header {
-				background: #47505d;
+				background: #1a2639;
 				border: none;
 				// font-size: 20px;
 				padding: 0;
