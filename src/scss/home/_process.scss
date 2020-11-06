@@ -1,0 +1,20 @@
+.process {
+	@include spacing(8rem);
+	// padding-bottom: 0.1rem;
+
+	background-color: #47505d;
+	font-family: 'Cera Pro', Roboto, Droid Sans;
+	color: #fff;
+	text-align: center;
+
+	h2 {
+		@extend %heading;
+		font-weight: 500;
+		margin-bottom: 8rem;
+	}
+	svg {
+		display: block;
+		max-width: 100rem;
+		margin: 0 auto;
+	}
+}

@@ -7,6 +7,7 @@ import Faq from './faq';
 import Register from './register';
 import SafetyInstructions from './safetyInstructions';
 import Subscribe from './subscribe';
+import Process from './process';
 
 export interface HomeProps {}
 
@@ -15,6 +16,7 @@ const Home: React.FC<HomeProps> = () => {
 		<div className='home'>
 			<SafetyInstructions />
 			<Banner />
+			<Process />
 			<Register />
 			<AboutUs />
 			<Subscribe />
