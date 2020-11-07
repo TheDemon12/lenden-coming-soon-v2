@@ -17,7 +17,7 @@
 		color: #bfe1ff;
 		line-height: 7rem;
 		z-index: 2;
-		max-width: 65rem;
+		max-width: 75rem;
 		font-family: 'Cera Pro', Roboto, Droid Sans;
 		font-size: 5rem;
 		font-weight: 600;
@@ -30,11 +30,14 @@
 		@media (max-width: 1200px) {
 			font-size: 4rem;
 			line-height: 6rem;
-			max-width: 50rem;
+			max-width: 60rem;
 		}
 		@media (max-width: 990px) {
 			font-size: 3.5rem;
 			line-height: 5rem;
+			max-width: 50rem;
+		}
+		@media (max-width: 900px) {
 			max-width: 35rem;
 		}
 
