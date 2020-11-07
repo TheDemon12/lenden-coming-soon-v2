@@ -1,4 +1,1 @@
-<svg viewBox="0 0 30 4" fill="none"
-    xmlns="http://www.w3.org/2000/svg">
-    <line x1="2" y1="2" x2="28" y2="2" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="bevel"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 30 4"><line x1="2" x2="28" y1="2" y2="2" stroke="#fff" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="4"/></svg>
