@@ -1,6 +1,6 @@
 .process {
 	@include spacing(8rem);
-	// padding-bottom: 0.1rem;
+	padding-bottom: 1rem !important;
 
 	background-color: #47505d;
 	font-family: 'Cera Pro', Roboto, Droid Sans;
@@ -11,8 +11,10 @@
 		@extend %heading;
 		font-weight: 500;
 		margin-bottom: 8rem;
-		font-size: 4rem;
 
+		@media (max-width: 700px) {
+			font-size: 4.5rem;
+		}
 		@media (max-width: 500px) {
 			font-size: 3.5rem;
 		}
@@ -24,5 +26,9 @@
 		display: block;
 		max-width: 100rem;
 		margin: 0 auto;
+
+		@media (max-width: 500px) {
+			max-width: 35rem;
+		}
 	}
 }
