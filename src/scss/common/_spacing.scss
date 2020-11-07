@@ -4,7 +4,10 @@
 	@media (max-width: 700px) {
 		padding: $top-bottom-spacing 3rem;
 	}
-	@media (max-width: 350px) {
+	@media (max-width: 380px) {
 		padding: $top-bottom-spacing 2rem;
+	}
+	@media (max-width: 350px) {
+		padding: $top-bottom-spacing 1rem;
 	}
 }
