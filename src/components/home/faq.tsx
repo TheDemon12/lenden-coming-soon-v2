@@ -36,7 +36,11 @@ const Faq: React.FC<FaqProps> = () => {
 		PC/Laptop Accessories
 		`,
 		},
-		{ ques: 'What products are prohibited on the website?', ans: '' },
+		{
+			ques: 'What products are prohibited on the website?',
+			ans:
+				'Any product that is illegal in nature such as Guns, drugs etc are prohibited on the website. To know more please check our terms of use.',
+		},
 		{
 			ques: 'On what basis will I get a value for my product?',
 			ans:
