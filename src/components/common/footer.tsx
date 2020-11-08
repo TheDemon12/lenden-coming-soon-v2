@@ -449,7 +449,8 @@ const Footer: React.FC<FooterProps> = () => {
 								<br />
 								26/84 West Patel Nagar, New Delhi - 110008, India.
 								<br />
-								<b>Phone:</b> <br />
+								<b>Phone:</b> +91 9310518244
+								<br />
 								<b>Email:</b> info@lendenindia.in
 								<br />
 								<b>Time:</b> Mon to Sat (10:30 to 6:30)
