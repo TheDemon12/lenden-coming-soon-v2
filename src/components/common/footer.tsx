@@ -60,8 +60,10 @@ const Footer: React.FC<FooterProps> = () => {
 				</div>
 				<div className='links'>
 					<div>Contact Us</div>
-					<div>+91 XXXXXXXXXX</div>
-					<div>Circular Leaf Ventures Pvt Ltd,</div>
+					<div onClick={() => window.open('tel:+91-9310518244')}>
+						+91 9310518244
+					</div>
+					<div>Circular Leaf Ventures Pvt. Ltd.,</div>
 					<div>26/84 West Patel Nagar, New Delhi - 110008, India.</div>
 					<div onClick={() => window.open('mailto:info@lendenindia.in"')}>
 						info@lendenindia.in
