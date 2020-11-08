@@ -19,7 +19,7 @@ const Banner: React.FC<BannerProps> = () => {
 						scroll.scrollToTop({ delay: 0, duration: 100 });
 						history.push('/post-product');
 					}}>
-					Register your Product
+					Register your product
 				</Button>
 			</div>
 			<Barter className='barter' />

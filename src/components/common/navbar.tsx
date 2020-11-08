@@ -57,7 +57,7 @@ const MainNavbar: React.FC<MainNavbarProps> = () => {
 							scroll.scrollToTop({ delay: 0, duration: 100 });
 							history.push('/post-product');
 						}}>
-						Register your Product
+						Register your product
 					</Button>
 				</Nav>
 			</Navbar.Collapse>
