@@ -51,4 +51,22 @@
 		font-size: 2rem;
 		margin-bottom: 2rem;
 	}
+
+	.scrollToTop {
+		background-color: #ffbc36;
+		height: 5rem;
+		width: 5rem;
+		border-radius: 50%;
+		position: fixed;
+		bottom: 3rem;
+		right: 3rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+
+		svg {
+			width: 40%;
+		}
+	}
 }

@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { ReactComponent as Top } from '../../icons/top.svg';
 
 export interface BlogPostProps {}
 
@@ -8,6 +9,9 @@ const BlogPost: React.FC<BlogPostProps> = () => {
 	}, []);
 	return (
 		<div className='blogPost'>
+			<div className='scrollToTop' onClick={() => window.scrollTo(0, 0)}>
+				<Top />
+			</div>
 			<img src='http://placekitten.com/800/800' alt='' />
 			<h1>A Welcome Note</h1>
 			<h4>
