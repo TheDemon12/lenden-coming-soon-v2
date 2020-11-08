@@ -5,6 +5,7 @@ import Home from './home';
 import Blog from './blog';
 import Footer from './common/footer';
 import MainNavbar from './common/navbar';
+import BlogPost from './blog/blogPost';
 
 export interface AppProps {}
 
@@ -13,6 +14,7 @@ const App: React.FC<AppProps> = () => {
 		<React.Fragment>
 			<MainNavbar />
 			<Switch>
+				<Route path='/blog/1' component={BlogPost} />
 				<Route path='/blog' component={Blog} />
 				<Route path='/post-product' component={PostProduct} />
 				<Route path='/' component={Home} />

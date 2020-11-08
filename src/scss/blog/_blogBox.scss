@@ -38,15 +38,15 @@
 
 			color: #ffffff;
 			display: -webkit-box;
-			-webkit-line-clamp: 6;
+			-webkit-line-clamp: 5;
 			-webkit-box-orient: vertical;
 			overflow: hidden;
 			text-overflow: ellipsis;
 			// margin: 2rem 0;
 
-			@media (max-width: 1700px) {
-				-webkit-line-clamp: 5;
-			}
+			// @media (max-width: 1700px) {
+			// 	-webkit-line-clamp: 5;
+			// }
 		}
 
 		.btn {

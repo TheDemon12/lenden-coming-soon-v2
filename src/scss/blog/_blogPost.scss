@@ -1,5 +1,54 @@
 .blogPost {
+	@include spacing(4rem);
+	background-color: hsl(217, 37%, 16%);
+	color: white;
+	font-family: Cera Pro;
+
 	img {
+		width: 100%;
+		max-width: 70rem;
+		max-height: 70rem;
 		float: left;
+		margin-right: 2rem;
+		// margin-bottom: 3rem;
+
+		@media (max-width: 1200px) {
+			max-width: 50rem;
+			max-height: 50rem;
+		}
+		@media (max-width: 900px) {
+			max-width: 40rem;
+			max-height: 40rem;
+		}
+		@media (max-width: 750px) {
+			max-width: 30rem;
+			max-height: 30rem;
+		}
+		@media (max-width: 600px) {
+			display: block;
+			float: none;
+			max-width: unset;
+			max-height: unset;
+			margin-bottom: 2rem;
+		}
+	}
+	h1 {
+		@extend %subHeading;
+		text-align: left;
+		margin-bottom: 2rem;
+	}
+	h4 {
+		text-transform: uppercase;
+		margin-bottom: 2rem;
+		font-size: 1.8rem;
+		span {
+			margin-left: 2rem;
+		}
+	}
+	p {
+		font-family: Cera Pro;
+		font-style: normal;
+		font-size: 2rem;
+		margin-bottom: 2rem;
 	}
 }
