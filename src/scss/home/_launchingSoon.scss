@@ -1,5 +1,6 @@
 .launchingSoon {
 	@include spacing(8rem);
+	padding-bottom: 0 !important;
 	position: relative;
 	font-family: 'Cera Pro', Roboto, Droid Sans;
 	text-align: center;
@@ -65,7 +66,7 @@
 		top: 0;
 		left: -5rem;
 		right: -5rem;
-		height: 55rem;
+		height: 50rem;
 		background-color: #47505d;
 		border-radius: 50% / 100%;
 		border-top-left-radius: 0;
@@ -73,21 +74,21 @@
 		z-index: -1;
 
 		@media (max-width: 1500px) {
-			height: 50rem;
+			height: 45rem;
 		}
 		@media (max-width: 1200px) {
-			height: 45rem;
+			height: 40rem;
 			left: -15rem;
 			right: -15rem;
 		}
 		@media (max-width: 700px) {
-			height: 42rem;
+			height: 38rem;
 		}
 		@media (max-width: 500px) {
-			height: 40rem;
+			height: 35rem;
 		}
 		@media (max-width: 400px) {
-			height: 35rem;
+			height: 30rem;
 		}
 	}
 }
