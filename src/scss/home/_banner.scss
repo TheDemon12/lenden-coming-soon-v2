@@ -27,7 +27,24 @@
 
 		span {
 			display: block;
-			color: #fff;
+			// color: #fff;
+			animation-name: whiter;
+			animation-duration: 1s;
+			animation-timing-function: ease-in-out;
+			animation-delay: 2s;
+			animation-iteration-count: 1;
+			animation-direction: normal;
+			animation-fill-mode: forwards;
+			animation-play-state: running;
+		}
+
+		@keyframes whiter {
+			0% {
+				// color: #bfe1ff;
+			}
+			100% {
+				color: #fff;
+			}
 		}
 
 		@media (max-width: 1200px) {
