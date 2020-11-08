@@ -34,7 +34,8 @@ class Subscribe extends React.Component<SubscribeProps, SubscribeState> {
 			this.setState({
 				email: '',
 				loading: false,
-				success: "We've received your email!",
+				success:
+					'Thank you for subscribing to our newsletter! Welcome to the cult!',
 			});
 		} catch (ex) {
 			this.setState({ loading: false });
