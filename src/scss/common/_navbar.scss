@@ -39,12 +39,14 @@
 
 		.nav-link {
 			&:active,
-			&:hover,
 			&:focus {
-				color: #bef1ff;
+				color: #fff;
+			}
+			&:hover {
+				color: #ffbc36;
 			}
 
-			color: #bef1ff;
+			color: #fff;
 			padding: 0.5rem 2rem;
 		}
 
