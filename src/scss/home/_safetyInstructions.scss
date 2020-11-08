@@ -1,9 +1,32 @@
 .safetyInstructions {
 	font-family: 'Cera Pro', Roboto, Droid Sans;
-	font-family: font(secondary);
 	background-color: #ffbc36;
 	text-align: center;
-	padding: 10px 0;
+	// padding: 1.5rem 0;
 	font-size: 1.5rem;
 	font-weight: 500;
+	white-space: nowrap;
+	overflow: hidden;
+	box-sizing: border-box;
+
+	p {
+		display: inline-flex;
+		align-items: center;
+		padding-left: 100%;
+		animation: marquee 25s linear infinite;
+		margin: 0;
+		span {
+			font-size: 3rem;
+			margin: 0 1rem;
+		}
+	}
+
+	@keyframes marquee {
+		0% {
+			transform: translate(0, 0);
+		}
+		100% {
+			transform: translate(-100%, 0);
+		}
+	}
 }
