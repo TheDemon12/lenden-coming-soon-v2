@@ -5,6 +5,8 @@ import { useHistory, useLocation } from 'react-router-dom';
 import { scroller, animateScroll as scroll } from 'react-scroll';
 
 import { ReactComponent as Logo } from '../../icons/logo.svg';
+import { ReactComponent as Cross } from '../../icons/cross.svg';
+import { ReactComponent as Menu } from '../../icons/menu.svg';
 
 export interface MainNavbarProps {}
 
@@ -33,7 +35,9 @@ const MainNavbar: React.FC<MainNavbarProps> = () => {
 				}}>
 				<Logo />
 			</Navbar.Brand>
-			<Navbar.Toggle onClick={() => setExpanded(!isExpanded)} />
+			<Navbar.Toggle onClick={() => setExpanded(!isExpanded)}>
+				{isExpanded ? <Cross /> : <Menu />}
+			</Navbar.Toggle>
 			<Navbar.Collapse>
 				<Nav className='ml-auto'>
 					<Nav.Link onClick={() => onNavClick('aboutUs')}>About Us</Nav.Link>
