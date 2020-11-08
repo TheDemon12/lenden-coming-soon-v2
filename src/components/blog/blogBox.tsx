@@ -13,7 +13,9 @@ const BlogBox: React.FC<BlogBoxProps> = props => {
 	const history = useHistory();
 
 	return (
-		<div className='blogBox'>
+		<div
+			className='blogBox'
+			onClick={() => history.push(`/blog/${props.index}`)}>
 			<div className='imageBox'>
 				<img src={props.image} />
 			</div>

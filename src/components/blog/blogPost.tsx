@@ -3,6 +3,9 @@ import * as React from 'react';
 export interface BlogPostProps {}
 
 const BlogPost: React.FC<BlogPostProps> = () => {
+	React.useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<div className='blogPost'>
 			<img src='http://placekitten.com/800/800' alt='' />
