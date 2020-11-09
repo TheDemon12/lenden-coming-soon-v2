@@ -8,6 +8,9 @@ import { ReactComponent as Accessories } from '../../icons/categories/accessory.
 export interface PostProductProps {}
 
 const PostProduct: React.FC<PostProductProps> = () => {
+	React.useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<div className='container chooseCategory'>
 			<div className='categoryContainer'>

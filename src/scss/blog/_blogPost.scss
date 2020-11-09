@@ -4,69 +4,123 @@
 	color: white;
 	font-family: Cera Pro;
 
-	img {
-		width: 100%;
-		max-width: 70rem;
-		max-height: 70rem;
-		float: left;
-		margin-right: 2rem;
-		// margin-bottom: 3rem;
+	.innerContainer {
+		max-width: 900px;
+		margin: 0 auto;
+		img {
+			width: 100%;
+			// max-width: 70rem;
+			max-height: 70rem;
+			// float: left;
+			// margin-right: 2rem;
+			// margin-bottom: 3rem;
+			object-fit: cover;
+			margin: 2rem auto;
 
-		@media (max-width: 1200px) {
-			max-width: 50rem;
-			max-height: 50rem;
+			// @media (max-width: 1200px) {
+			// 	max-width: 50rem;
+			// 	max-height: 50rem;
+			// }
+			// @media (max-width: 900px) {
+			// 	max-width: 40rem;
+			// 	max-height: 40rem;
+			// }
+			// @media (max-width: 750px) {
+			// 	max-width: 30rem;
+			// 	max-height: 30rem;
+			// }
+			// @media (max-width: 600px) {
+			// 	display: block;
+			// 	float: none;
+			// 	max-width: unset;
+			// 	max-height: unset;
+			// 	margin-bottom: 2rem;
+			// }
 		}
-		@media (max-width: 900px) {
-			max-width: 40rem;
-			max-height: 40rem;
-		}
-		@media (max-width: 750px) {
-			max-width: 30rem;
-			max-height: 30rem;
-		}
-		@media (max-width: 600px) {
-			display: block;
-			float: none;
-			max-width: unset;
-			max-height: unset;
+		h1 {
+			@extend %heading2;
+			text-align: left;
 			margin-bottom: 2rem;
+			color: #ffbc36;
 		}
-	}
-	h1 {
-		@extend %subHeading;
-		text-align: left;
-		margin-bottom: 2rem;
-	}
-	h4 {
-		text-transform: uppercase;
-		margin-bottom: 2rem;
-		font-size: 1.8rem;
-		span {
-			margin-left: 2rem;
+		h4 {
+			text-transform: uppercase;
+			// margin-bottom: 2rem;
+			font-size: 1.8rem;
+			.author {
+				margin-left: 2rem;
+
+				span {
+					margin: 0 1rem;
+				}
+			}
 		}
-	}
-	p {
-		font-family: Cera Pro;
-		font-style: normal;
-		font-size: 2rem;
-		margin-bottom: 2rem;
-	}
+		@media (max-width: 510px) {
+			h1 {
+				margin-bottom: 1rem;
+			}
+			h4 {
+				font-size: 1.4rem;
+				.author {
+					display: block;
+					margin: 0.5rem 0;
+				}
+			}
+		}
+		p {
+			font-family: Cera Pro;
+			font-style: normal;
+			font-size: 2rem;
+			margin-bottom: 2rem;
 
-	.scrollToTop {
-		background-color: #ffbc36;
-		height: 5rem;
-		width: 5rem;
-		border-radius: 50%;
-		position: fixed;
-		bottom: 3rem;
-		right: 3rem;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		cursor: pointer;
+			@media (max-width: 510px) {
+				font-size: 1.8rem;
+			}
 
-		svg {
-			width: 40%;
+			.email {
+				cursor: pointer;
+				// text-decoration: underline;
+				padding-bottom: 0.1rem;
+				border-bottom: 2px solid white;
+				// margin: 0 0.5rem;
+			}
+
+			.postProduct {
+				cursor: pointer;
+				color: #ffbc36;
+				font-weight: 500;
+			}
+		}
+
+		.scrollToTop {
+			background-color: #ffbc36;
+			height: 5rem;
+			width: 5rem;
+			border-radius: 50%;
+			position: fixed;
+			bottom: 3rem;
+			right: 3rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			cursor: pointer;
+
+			svg {
+				width: 40%;
+			}
+		}
+
+		.sharePost {
+			display: flex;
+			margin-top: 2rem;
+			svg {
+				cursor: pointer;
+				width: 3.5rem;
+				margin: 0 1rem;
+				&:first-of-type {
+					margin-left: 0;
+				}
+			}
 		}
 	}
 }
