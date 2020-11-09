@@ -1,11 +1,23 @@
 .banner {
-	@include spacing(12rem);
+	@include spacing(20rem);
 
 	color: white;
 	position: relative;
 	display: flex;
 	align-items: center;
 
+	@media (max-width: 1400px) {
+		padding: 15rem 5rem;
+	}
+	@media (max-width: 1200px) {
+		padding: 12rem 5rem;
+	}
+	@media (max-width: 990px) {
+		padding: 10rem 5rem;
+	}
+	@media (max-width: 850px) {
+		padding: 6rem 5rem;
+	}
 	@media (max-width: 700px) {
 		padding: 8rem 5rem;
 	}
@@ -46,18 +58,21 @@
 				color: #fff;
 			}
 		}
+		@media (max-width: 1400px) {
+			max-width: 55rem;
+		}
 
 		@media (max-width: 1200px) {
 			font-size: 4rem;
 			line-height: 6rem;
-			max-width: 60rem;
+			max-width: 45rem;
 		}
 		@media (max-width: 990px) {
 			font-size: 3.5rem;
 			line-height: 5rem;
-			max-width: 50rem;
+			max-width: 35rem;
 		}
-		@media (max-width: 900px) {
+		@media (max-width: 850px) {
 			max-width: 35rem;
 		}
 
@@ -76,18 +91,25 @@
 	.barter {
 		z-index: 1;
 		position: absolute;
-		bottom: 15rem;
+		// bottom: 20rem;
 		right: 2rem;
-		width: 50rem;
+		width: 65rem;
+
+		@media (max-width: 1400px) {
+			width: 60rem;
+		}
 
 		@media (max-width: 1200px) {
-			width: 40rem;
-			bottom: 18rem;
+			width: 50rem;
+			// bottom: 18rem;
 		}
 
 		@media (max-width: 990px) {
-			width: 35rem;
-			bottom: 20rem;
+			width: 50rem;
+			// bottom: 20rem;
+		}
+		@media (max-width: 850px) {
+			width: 40rem;
 		}
 		@media (max-width: 700px) {
 			display: none;
@@ -98,14 +120,20 @@
 		// z-index: -1;
 		position: absolute;
 		right: 0;
-		height: 60rem;
+		height: 85rem;
+		@media (max-width: 1400px) {
+			height: 80rem;
+		}
 
 		@media (max-width: 1200px) {
-			height: 50rem;
+			height: 68rem;
 		}
 
 		@media (max-width: 990px) {
-			height: 45rem;
+			height: 65rem;
+		}
+		@media (max-width: 850px) {
+			height: 50rem;
 		}
 
 		@media (max-width: 700px) {
