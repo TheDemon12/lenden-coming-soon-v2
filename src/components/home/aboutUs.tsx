@@ -12,8 +12,8 @@ const AboutUs: React.FC<AboutUsProps> = () => {
 			<h2>About us</h2>
 
 			<p>
-				Barter isn’t simply exchange, it is a way of living. We are here to
-				introduce you to it.
+				<span>Barter</span> isn’t simply exchange, it is a way of living. We are
+				here to introduce you to it.
 			</p>
 
 			<div className='message'>
