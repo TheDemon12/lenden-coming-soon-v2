@@ -38,11 +38,14 @@
 		padding: 1rem 0;
 
 		.nav-link {
-			&:active,
+			// &:active,
 			&:focus {
 				color: #fff;
 			}
 			&:hover {
+				color: #ffbc36;
+			}
+			&.active {
 				color: #ffbc36;
 			}
 

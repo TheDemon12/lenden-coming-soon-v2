@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { Button, Nav, Navbar } from 'react-bootstrap';
-import { useHistory, useLocation } from 'react-router-dom';
+import { NavLink, useHistory, useLocation } from 'react-router-dom';
 import { scroller, animateScroll as scroll } from 'react-scroll';
 
 import { ReactComponent as Logo } from '../../icons/logo.svg';
@@ -41,14 +41,23 @@ const MainNavbar: React.FC<MainNavbarProps> = () => {
 			<Navbar.Collapse>
 				<Nav className='ml-auto'>
 					<Nav.Link onClick={() => onNavClick('aboutUs')}>About Us</Nav.Link>
-					<Nav.Link
+					{/* <Nav.Link
 						onClick={() => {
 							setExpanded(false);
 							scroll.scrollToTop({ delay: 0, duration: 100 });
 							history.push('/blog');
-						}}>
+						}}> */}
+					<NavLink
+						to='/blog'
+						onClick={() => {
+							setExpanded(false);
+							scroll.scrollToTop({ delay: 0, duration: 100 });
+							history.push('/blog');
+						}}
+						className='nav-link'>
 						Blog
-					</Nav.Link>
+					</NavLink>
+					{/* </Nav.Link> */}
 					<Nav.Link onClick={() => onNavClick('faq')}>FAQ's</Nav.Link>
 					<Nav.Link onClick={() => onNavClick('footer')}>Contact Us</Nav.Link>
 					<Button
