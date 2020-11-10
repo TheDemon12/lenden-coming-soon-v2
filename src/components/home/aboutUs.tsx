@@ -11,9 +11,9 @@ const AboutUs: React.FC<AboutUsProps> = () => {
 		<section className='aboutUs'>
 			<h2>About us</h2>
 
-			<p>
-				<span>Barter</span> isn’t simply exchange, it is a way of living. We are
-				here to introduce you to it.
+			<p className='mainline'>
+				<span className='pre-text'>Barter</span> isn’t simply exchange, it is a
+				way of living. We are here to introduce you to it.
 			</p>
 
 			<div className='message'>
