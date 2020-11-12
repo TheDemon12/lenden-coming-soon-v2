@@ -30,7 +30,7 @@ const AboutUs: React.FC<AboutUsProps> = () => {
 					</Button>
 				</div>
 
-				<img src='/plant2.png' alt='' />
+				<img src='/aboutUs.jpg' alt='' />
 			</div>
 		</section>
 	);
