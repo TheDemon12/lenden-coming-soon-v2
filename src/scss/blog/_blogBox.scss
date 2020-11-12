@@ -50,6 +50,10 @@
 		}
 
 		.btn {
+			&:hover {
+				background-color: #ffbc36 !important;
+			}
+
 			@extend %button;
 			width: fit-content;
 			background-color: #ffffff !important;
