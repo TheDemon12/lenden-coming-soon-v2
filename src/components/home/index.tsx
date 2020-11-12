@@ -9,6 +9,7 @@ import SafetyInstructions from './safetyInstructions';
 import Subscribe from './subscribe';
 import Process from './process';
 import LaunchingSoon from './launchingSoon';
+import Seal from './seal';
 
 export interface HomeProps {}
 
@@ -18,6 +19,7 @@ const Home: React.FC<HomeProps> = () => {
 			<SafetyInstructions />
 			<Banner />
 			<Process />
+			<Seal />
 			<Register />
 			<AboutUs />
 			<LaunchingSoon />

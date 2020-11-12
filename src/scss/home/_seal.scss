@@ -1,0 +1,57 @@
+.seal {
+	@include spacing(8rem);
+	font-family: 'Cera Pro', Roboto, Droid Sans;
+
+	.innerContainer {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		border: 10px solid #ffbc36;
+		padding: 4rem;
+
+		@media (max-width: 500px) {
+			flex-direction: column;
+			padding: 4rem 2rem;
+			border: 5px solid #ffbc36;
+
+			p {
+				text-align: center !important;
+			}
+			svg {
+				margin: 2rem 0 !important;
+				width: 12rem !important;
+			}
+		}
+
+		p {
+			@extend %subHeading;
+			text-align: left;
+			color: #fff;
+			font-weight: 600;
+			font-size: 3rem;
+			flex-basis: 75%;
+
+			@media (max-width: 990px) {
+				font-size: 2.7rem;
+			}
+
+			@media (max-width: 600px) {
+				flex-basis: 80%;
+			}
+
+			@media (max-width: 500px) {
+				font-size: 2.4rem;
+			}
+		}
+
+		svg {
+			margin-left: 4rem;
+			flex-shrink: 0;
+			width: 15rem;
+
+			@media (max-width: 600px) {
+				flex-shrink: unset;
+			}
+		}
+	}
+}
