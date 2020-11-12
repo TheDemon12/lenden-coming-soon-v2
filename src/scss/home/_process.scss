@@ -1,6 +1,5 @@
 .process {
 	@include spacing(8rem);
-	padding-bottom: 1rem !important;
 
 	background-color: #47505d;
 	font-family: 'Cera Pro', Roboto, Droid Sans;
@@ -24,7 +23,7 @@
 	}
 	svg {
 		display: block;
-		max-width: 100rem;
+		max-width: 120rem;
 		margin: 0 auto;
 
 		@media (max-width: 500px) {
