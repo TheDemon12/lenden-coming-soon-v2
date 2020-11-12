@@ -14,24 +14,6 @@ const PostProduct: React.FC<PostProductProps> = () => {
 	return (
 		<div className='container chooseCategory'>
 			<h1>Choose a Category</h1>
-			<section className='verification'>
-				<p>All the products will undergo two levels of verification:</p>
-				<ol>
-					<li>
-						<span className='heading'>Level 1 : </span>verification via photo
-						angles.
-					</li>
-					<li>
-						<span className='heading'>Level 2 : </span>physical examination of
-						the product at the time of pickup.
-					</li>
-				</ol>
-				<p>
-					On delivery, please check for a unique seal which is valid for 3 days.
-					If you intend to return your product, please make sure you do not
-					tamper with the seal.
-				</p>
-			</section>
 			<div className='categoryContainer'>
 				<div className='row'>
 					<div
@@ -93,6 +75,24 @@ const PostProduct: React.FC<PostProductProps> = () => {
 					</div>
 				</div>
 			</div>
+			<section className='verification'>
+				<p>All the products will undergo two levels of verification:</p>
+				<ul>
+					<li>
+						<span className='heading'>Level 1 : </span>Verification via photo
+						angles.
+					</li>
+					<li>
+						<span className='heading'>Level 2 : </span>Physical examination of
+						the product at the time of pickup.
+					</li>
+				</ul>
+				<p>
+					On delivery, please check for a unique seal which is valid for 3 days.
+					If you intend to return your product, please make sure you do not
+					tamper with the seal.
+				</p>
+			</section>
 		</div>
 	);
 };
