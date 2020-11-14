@@ -8,8 +8,8 @@ const LaunchingSoon: React.FC<LaunchingSoonProps> = () => {
 		<section className='launchingSoon'>
 			<div className='ellipse'></div>
 			<h2>
-				The main website is under construction
-				<span>Launching soon!</span>
+				<span className='first'>T</span>he main website is under construction.
+				<span className='soon'>Launching soon!</span>
 			</h2>
 			<UnderConst />
 		</section>

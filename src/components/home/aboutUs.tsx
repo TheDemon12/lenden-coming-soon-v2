@@ -10,12 +10,11 @@ const AboutUs: React.FC<AboutUsProps> = () => {
 	return (
 		<section className='aboutUs'>
 			<h2>About us</h2>
-
 			<p className='mainline'>
 				<span className='pre-text'>Barter</span> isn’t simply exchange, it is a
-				way of living. We are here to introduce you to it.
+				way of living.
 			</p>
-
+			<p className='subLine'>We are here to introduce you to it.</p>
 			<div className='message'>
 				<div className='text'>
 					Len Den wants to help you live a sustainable lifestyle by re-adopting

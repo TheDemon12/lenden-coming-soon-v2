@@ -15,10 +15,15 @@
 		color: #fff;
 		text-align: center;
 		font-style: italic;
-		margin: 6rem auto;
+		margin: 6rem auto 0 auto;
 		font-weight: 600;
 		// padding: 0 2rem;
 		font-size: 4rem;
+
+		&.subLine {
+			font-style: normal;
+			margin: 2rem auto;
+		}
 
 		@media (max-width: 1200px) {
 			font-size: 3.7rem;

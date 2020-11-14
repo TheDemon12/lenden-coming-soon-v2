@@ -20,8 +20,8 @@
 	.categoryContainer {
 		max-height: fit-content;
 		width: 90%;
-		padding: 0 0.5rem;
-		max-width: 380px;
+		padding: 0 1rem;
+		max-width: 480px;
 		margin: 2rem auto;
 
 		.row {
@@ -63,6 +63,7 @@
 	.verification {
 		font-size: 1.6rem;
 		margin: 0 auto 3rem auto;
+		padding: 0 1rem;
 		li {
 			.heading {
 				font-weight: 600;

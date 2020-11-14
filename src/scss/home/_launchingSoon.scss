@@ -10,6 +10,11 @@
 		@extend %heading2;
 		font-weight: 500;
 
+		.first {
+			display: inline;
+			font-size: calc(1.2em);
+		}
+
 		// @media (max-width: 1200px) {
 		// 	font-size: 4.5rem;
 		// }
@@ -30,7 +35,7 @@
 			font-size: 2rem;
 		}
 
-		span {
+		.soon {
 			display: block;
 			color: #ffbc36;
 			font-size: 8rem;
