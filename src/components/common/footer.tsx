@@ -201,8 +201,8 @@ const Footer: React.FC<FooterProps> = () => {
 					privacy. Please read the following statement to learn about our
 					information gathering and dissemination practices.
 					<br />
-					<b>Note:</b> By using or visiting the Lenden or any services provided
-					to you on, from, or through Circular Leaf Ventures Pvt. Ltd.
+					<b>Note:</b> By using or visiting lendenindia.in or any services
+					provided to you on, from, or through Circular Leaf Ventures Pvt. Ltd.
 					(collectively the “Service”) you signify your agreement to:
 					<ol>
 						<li>
