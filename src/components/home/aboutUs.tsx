@@ -18,8 +18,8 @@ const AboutUs: React.FC<AboutUsProps> = () => {
 			<div className='message'>
 				<div className='text'>
 					Len Den wants to help you live a sustainable lifestyle by re-adopting
-					barter. We have created a platform where you can get what you want by
-					giving what you do not want anymore without paying any price.
+					barter. We are creating a platform where you can get what you want by
+					giving what you do not want anymore.
 					<Button
 						onClick={() => {
 							scroll.scrollToTop({ delay: 0, duration: 100 });

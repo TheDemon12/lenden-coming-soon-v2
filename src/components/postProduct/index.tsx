@@ -67,7 +67,7 @@ const PostProduct: React.FC<PostProductProps> = () => {
 						style={{ borderBottom: 'none' }}
 						onClick={() =>
 							window.open(
-								'https://docs.google.com/forms/d/e/1FAIpQLSeZbgqjSGyCbZrOfZ3kSO97xZDNvpxvqpTssXYJVVmdvg-uGg/viewform?vc=0&c=0&w=1&flr=0&gxids=7628'
+								'https://docs.google.com/forms/d/e/1FAIpQLScRgD2M_Ogo3QobrCDU2n4fQQSFVxEKPM2uDJW94vldF_wCkw/viewform?vc=0&c=0&w=1&flr=0&usp=mail_form_link'
 							)
 						}>
 						<Accessories />
@@ -76,6 +76,7 @@ const PostProduct: React.FC<PostProductProps> = () => {
 				</div>
 			</div>
 			<section className='verification'>
+				<h4>Must be read carefully</h4>
 				<p>All the products will undergo two levels of verification:</p>
 				<ul>
 					<li>

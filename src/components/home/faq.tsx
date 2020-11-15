@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Accordion, Card } from 'react-bootstrap';
 import { ReactComponent as Plus } from '../../icons/plus.svg';
 import { ReactComponent as Minus } from '../../icons/minus.svg';
+import { scroller } from 'react-scroll';
 
 export interface FaqProps {}
 
@@ -12,17 +13,17 @@ const Faq: React.FC<FaqProps> = () => {
 		{
 			ques: 'Why should I choose to barter with Len Den?',
 			ans:
-				'With Len Den, you are adopting a new way of living that is sustainable, less cash dependent, reliable and fun. We are here to fulfill your wishes by giving you a fair and suitable product match',
+				'With Len Den, you are adopting a new way of living that is sustainable, less cash dependent, reliable and fun. We are here to fulfill your wishes by giving you a fair and suitable product match.',
 		},
 		{
 			ques: 'What is the process of bartering with Len Den?',
 			ans:
-				'Once you register your product with us, we will get in touch with you. Our team will send you personalized options and assist you throughout the process',
+				'Once you register your product with us, we will get in touch with you. Our team will send you personalized options and assist you throughout the process.',
 		},
 		{
 			ques: 'Why register your product?',
 			ans:
-				'By registering your product, you can get whatever you want in exchange without spending money on it using our hassle free process',
+				'By registering your product, you can get whatever you want in exchange without spending money on it using our hassle free process.',
 		},
 		{
 			ques: 'What are the products that I can barter/get in return?',
@@ -33,7 +34,7 @@ const Faq: React.FC<FaqProps> = () => {
 		Gaming CDs,
 		Gaming Accessories,
 		Mobile Accessories,
-		PC/Laptop Accessories
+		PC/Laptop Accessories.
 		`,
 		},
 		{
@@ -77,19 +78,46 @@ const Faq: React.FC<FaqProps> = () => {
 					if (key) setActiveKey(key!.toString());
 					else setActiveKey('');
 				}}>
-				{faqs.map((faq, i) => (
-					<Card key={i}>
-						<Card.Header>
-							<Accordion.Toggle as='div' eventKey={i.toString()}>
-								{faq.ques}
-								{i.toString() === activeKey ? <Minus /> : <Plus />}
-							</Accordion.Toggle>
-						</Card.Header>
-						<Accordion.Collapse eventKey={i.toString()}>
-							<Card.Body>{faq.ans}</Card.Body>
-						</Accordion.Collapse>
-					</Card>
-				))}
+				{faqs.map((faq, i) => {
+					if (i !== 4)
+						return (
+							<Card key={i}>
+								<Card.Header>
+									<Accordion.Toggle as='div' eventKey={i.toString()}>
+										{faq.ques}
+										{i.toString() === activeKey ? <Minus /> : <Plus />}
+									</Accordion.Toggle>
+								</Card.Header>
+								<Accordion.Collapse eventKey={i.toString()}>
+									<Card.Body>{faq.ans}</Card.Body>
+								</Accordion.Collapse>
+							</Card>
+						);
+					else
+						return (
+							<Card key={i}>
+								<Card.Header>
+									<Accordion.Toggle as='div' eventKey={i.toString()}>
+										What products are prohibited on the website?
+										{i.toString() === activeKey ? <Minus /> : <Plus />}
+									</Accordion.Toggle>
+								</Card.Header>
+								<Accordion.Collapse eventKey={i.toString()}>
+									<Card.Body>
+										Any product that is illegal in nature such as Guns, drugs
+										etc are prohibited on the website. To know more please check
+										our{' '}
+										<span
+											style={{ cursor: 'pointer' }}
+											onClick={() => scroller.scrollTo('footer', {})}>
+											terms of use
+										</span>
+										.
+									</Card.Body>
+								</Accordion.Collapse>
+							</Card>
+						);
+				})}
 			</Accordion>
 		</section>
 	);

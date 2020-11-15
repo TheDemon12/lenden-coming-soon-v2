@@ -7,7 +7,7 @@ export interface ProcessProps {}
 const Process: React.FC<ProcessProps> = () => {
 	return (
 		<section className='process'>
-			<h2>LENDEN PROCESS</h2>
+			<h2>LEN DEN PROCESS</h2>
 			{window.innerWidth > 500 ? <BarterProcess /> : <BarterProcessMobile />}
 		</section>
 	);

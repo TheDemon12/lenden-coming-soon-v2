@@ -1,10 +1,16 @@
 import * as React from 'react';
 import { ReactComponent as Top } from '../../icons/top.svg';
 import { ReactComponent as Facebook } from '../../icons/facebook.svg';
-import { ReactComponent as Instagram } from '../../icons/instagram.svg';
+import { ReactComponent as Whatsapp } from '../../icons/whatsapp.svg';
 import { ReactComponent as Linkedin } from '../../icons/linkedin.svg';
 import { ReactComponent as Twitter } from '../../icons/twitter.svg';
 import { useHistory } from 'react-router-dom';
+import {
+	FacebookShareButton,
+	LinkedinShareButton,
+	TwitterShareButton,
+	WhatsappShareButton,
+} from 'react-share';
 
 export interface BlogPostProps {}
 
@@ -13,6 +19,8 @@ const BlogPost: React.FC<BlogPostProps> = () => {
 	React.useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
+	const title = 'A Welcome Note - By Hiteshi Gangwani';
+	const url = window.location.href;
 	return (
 		<div className='blogPost'>
 			<div className='innerContainer'>
@@ -27,40 +35,18 @@ const BlogPost: React.FC<BlogPostProps> = () => {
 					</span>
 				</h4>
 				<div className='sharePost'>
-					<div
-						onClick={() =>
-							window.open(
-								'https://www.facebook.com/sharer/sharer.php?u=' +
-									encodeURIComponent(window.location.href),
-								'facebook-share-dialog',
-								'width=626,height=436'
-							)
-						}>
+					<FacebookShareButton title={title} url={url}>
 						<Facebook />
-					</div>
-					{/* <div>
-						<Instagram />
-					</div> */}
-					<div
-						onClick={() =>
-							window.open(
-								`https://twitter.com/intent/tweet?url=${encodeURIComponent(
-									window.location.href
-								)}`
-							)
-						}>
+					</FacebookShareButton>
+					<TwitterShareButton title={title} url={url}>
 						<Twitter />
-					</div>
-					<div
-						onClick={() =>
-							window.open(
-								`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
-									window.location.href
-								)}`
-							)
-						}>
+					</TwitterShareButton>
+					<WhatsappShareButton title={title} url={url}>
+						<Whatsapp />
+					</WhatsappShareButton>
+					<LinkedinShareButton title={title} url={url}>
 						<Linkedin />
-					</div>
+					</LinkedinShareButton>
 				</div>
 				<img src='/blog1.png' alt='' />
 
